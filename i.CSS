@@ -1,0 +1,449 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 1000;
+    background-color: #7B0405;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+   
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Écarte davantage les options */
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espace entre l'icône et le texte */
+    transition: color 0.5s ease;
+}
+
+nav a:hover {
+    color: #0e0247; /* Couleur de survol */
+}
+
+nav i {
+    font-size: 1.2em; /* Taille des icônes */
+}
+
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color:  #2A4162; /* Bleu clair */
+}
+
+/* Services */
+
+/* .service-container{
+    background-image:url(images/Abo.png);
+    background-size: cover;
+    background-position: center;
+} */
+.service-container, .portfolio-container, .team-container, .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* background-image:url(images/Abo.png);
+    background-size: cover;
+    background-position: center; */
+
+}
+
+.service, .portfolio-item, .team-member {
+    text-align: center;
+    max-width: 300px;
+}
+
+.service img, .portfolio-item img, .team-member img, .contact-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* a rpopos session */
+#apropos{
+    background-image:url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    padding: 60px 20px;
+    background-color: white; /* Bleu foncé pour correspondre à la section équipe */
+    color: #ffffff;
+    text-align: center;
+    background-image:url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+    padding : 50px;
+    backdrop-filter: blur(8px);
+}
+
+#contact h2 {
+    color: #7B0405;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-image {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-details {
+    max-width: 400px;
+    text-align: left;
+    color: #7B0405;
+}
+
+.contact-details p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.icon-img {
+    width: 50px;  /* Taille de l'icône */
+    height: 50px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.social-icon {
+    font-size: 1.2em;
+    color: #04036e;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.social-icon.whatsapp:hover .icon-img {
+    filter: brightness(1.3); /* Effet de survol */
+}
+
+.social-icon.linkedin:hover .icon-img {
+    filter: brightness(1.3);
+}
+
+
+form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Boutons */
+button:hover{
+    background-color: #0c007a;
+}
+button {
+    background-color: #7B0405;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #7B0405;
+    color: #FFFFFF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#accueil {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+    background-image:url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.accueil-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.text-content {
+    max-width: 400px;
+    text-align: left;
+}
+
+.text-content h1 {
+    color:#7B0405;
+}
+
+.slogan {
+    font-style: italic;
+    color: #2A4162;
+}
+
+.side-image {
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+#team {
+    padding: 60px 20px;
+    background-color: #2A4162; /* Bleu foncé */
+    color: #ffffff;
+    text-align: center;
+}
+
+#team h2 {
+    color: white; /* Jaune clair pour contraster */
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #2A4162; /* Un bleu légèrement plus clair pour chaque membre */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid  #7B0405; /* Bordure jaune autour des images */
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    color: white;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+
+    nav {
+        position: fixed;
+        top: 0;
+        width:100%;
+        z-index: 1000;
+        background-color: #7B0405;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style pour l'image responsive */
+.responsive-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px; /* Ajustez selon votre mise en page */
+}
+
+.responsive-image-container img {
+    max-width: 120%;
+    height: auto;
+    border-radius: 8px; /* Optionnel : ajoute des coins arrondis */
+}
+
+/* Style pour la section À propos avec une image de fond */
+
+
+#apropos {
+    background-image: url('images/Abo.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover;        /* S'assure que l'image couvre toute la section */
+    background-position: center;   /* Centre l'image de fond */
+    background-attachment: fixed;  /* Garde l'image fixe lors du défilement (optionnel) */
+    padding: 60px 20px;            /* Ajoute de l'espace autour du contenu */
+    color: white;                  /* Couleur de texte pour la lisibilité */
+    text-align: center;
+
+    background-image:url(images/bg.png)!;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Applique un fond semi-transparent pour améliorer la lisibilité du texte */
+#apropos p {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond noir transparent */
+    padding: 15px;
+    border-radius: 8px;                   /* Coins arrondis */
+    display: inline-block;                /* Garde le fond proche du texte */
+}
+
+
+
+
+/* Style pour le menu burger */
+.menu-burger {
+    display: none; /* Cacher par défaut */
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    color: #000; /* Icône burger noire */
+}
+
+/* Style pour le menu de navigation mobile */
+#mobile-nav {
+    display: none; /* Cacher par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Fond sombre et opaque */
+    color: rgb(255, 255, 255);
+    z-index: 9;
+    overflow-y: auto;
+    transition: transform 0.5s ease; /* Animation pour la transition */
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+#mobile-nav.open {
+    display: block; /* Rendre visible le menu lorsqu'il est ouvert */
+}
+
+#mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Disposer les éléments horizontalement */
+    flex-direction: column; /* Liste verticale */
+    justify-content: flex-start; /* Alignement des éléments vers le haut */
+    width: 80%; /* Réduire la largeur pour donner un aspect plus compact */
+    text-align: center;
+    max-height: 80%; /* Limiter la hauteur du menu pour le rendre plus compact */
+    overflow-y: auto; /* Ajouter un scroll si la liste devient trop longue */
+}
+
+#mobile-nav ul li {
+    margin: 10px 0; /* Espacement réduit entre les éléments */
+}
+
+#mobile-nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 16px; /* Réduire la taille de la police pour compacter le texte */
+    text-decoration: none;
+    display: block;
+    padding: 12px; /* Réduire un peu le padding pour rendre le menu plus compact */
+    font-weight: 500;
+    transition: color 0.3s ease; /* Animation de couleur au survol */
+}
+
+/* Effet au survol des liens */
+#mobile-nav ul li a:hover {
+    color: #f39c12; /* Jaune-orangé */
+}
+
+/* Affichage du menu burger et du menu mobile sur petits écrans */
+@media (max-width: 768px) {
+    .menu-burger {
+        display: block; /* Afficher l'icône burger sur les petits écrans */
+    }
+
+    nav {
+        display: block; /* Masquer la barre de navigation classique sur mobile */
+    }
+
+    #mobile-nav {
+        transform: translateX(-100%); /* Masquer le menu en dehors de l'écran */
+        display: block;
+    }
+
+    #mobile-nav.open {
+        transform: translateX(0); /* Faire glisser le menu depuis la gauche */
+    }
+}
+
+/* Masquer le menu burger sur les grands écrans (PC, tablettes en mode paysage, etc.) */
+@media (min-width: 769px) {
+    .menu-burger {
+        display: none; /* Masquer l'icône burger sur les écrans plus larges */
+    }
+}
+}
